@@ -31,7 +31,6 @@
 	)
 	(setup
 		(pad_to_mask_clearance 0.051)
-		(solder_mask_min_width 0.25)
 		(allow_soldermask_bridges_in_footprints no)
 		(pcbplotparams
 			(layerselection 0x00010f0_ffffffff)
@@ -259,7 +258,7 @@
 		(path "/00000000-0000-0000-0000-00005ef83f83")
 		(sheetname "Root")
 		(sheetfile "TRS-IO-M1.kicad_sch")
-		(attr through_hole)
+		(attr through_hole dnp)
 		(fp_line
 			(start 3.87 -1.33)
 			(end 3.87 49.59)
@@ -2723,7 +2722,7 @@
 		(path "/98247c65-8e5c-4cdd-9cf5-ee1153042cbb")
 		(sheetname "Root")
 		(sheetfile "TRS-IO-M1.kicad_sch")
-		(attr through_hole)
+		(attr through_hole dnp)
 		(fp_line
 			(start -30.31 12.95)
 			(end 30.31 12.95)
@@ -4371,7 +4370,7 @@
 		(path "/00000000-0000-0000-0000-000062485667")
 		(sheetname "Root")
 		(sheetfile "TRS-IO-M1.kicad_sch")
-		(attr through_hole)
+		(attr through_hole dnp)
 		(fp_line
 			(start -1.33 -1.33)
 			(end 0 -1.33)
@@ -4634,7 +4633,7 @@
 		(path "/00000000-0000-0000-0000-00005efa1eb3")
 		(sheetname "Root")
 		(sheetfile "TRS-IO-M1.kicad_sch")
-		(attr through_hole)
+		(attr through_hole dnp)
 		(fp_line
 			(start 1.16 -1.3175)
 			(end 1.16 45.6625)
@@ -5506,7 +5505,7 @@
 		(path "/00000000-0000-0000-0000-00006255a2ef")
 		(sheetname "Root")
 		(sheetfile "TRS-IO-M1.kicad_sch")
-		(attr through_hole)
+		(attr through_hole dnp)
 		(fp_line
 			(start -1.33 -1.33)
 			(end 0 -1.33)
@@ -5981,7 +5980,7 @@
 		(path "/175e5021-4653-4196-9e68-8ab68fd05c94")
 		(sheetname "Root")
 		(sheetfile "TRS-IO-M1.kicad_sch")
-		(attr through_hole)
+		(attr through_hole dnp)
 		(fp_line
 			(start -1.33 -1.33)
 			(end 0 -1.33)
@@ -7672,7 +7671,7 @@
 		(path "/a925f9f6-6f00-4b0c-9d36-eec8b70c01df")
 		(sheetname "Root")
 		(sheetfile "TRS-IO-M1.kicad_sch")
-		(attr through_hole)
+		(attr through_hole dnp)
 		(fp_line
 			(start 1.33 1.27)
 			(end 1.33 47.05)
@@ -8375,7 +8374,7 @@
 		(path "/00000000-0000-0000-0000-00005fcfd42d")
 		(sheetname "Root")
 		(sheetfile "TRS-IO-M1.kicad_sch")
-		(attr through_hole)
+		(attr through_hole dnp)
 		(fp_line
 			(start -0.655 1.08)
 			(end -0.655 1.545)
@@ -9118,7 +9117,7 @@
 		(path "/00000000-0000-0000-0000-00005fd00b48")
 		(sheetname "Root")
 		(sheetfile "TRS-IO-M1.kicad_sch")
-		(attr through_hole)
+		(attr through_hole dnp)
 		(fp_line
 			(start 1 5.5)
 			(end 5.5 5.5)

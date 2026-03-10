@@ -15840,7 +15840,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "00000000-0000-0000-0000-00005efa1eb3")
 		(property "Reference" "U6"
 			(at 106.68 41.91 0)
@@ -16340,7 +16340,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "00000000-0000-0000-0000-00005fcfd42d")
 		(property "Reference" "D1"
 			(at 215.9 132.842 0)
@@ -16614,7 +16614,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "00000000-0000-0000-0000-00005fd00b48")
 		(property "Reference" "SW1"
 			(at 218.44 190.5 0)
@@ -16812,7 +16812,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "00000000-0000-0000-0000-000062485667")
 		(property "Reference" "J4"
 			(at 292.3032 147.8026 0)
@@ -17149,7 +17149,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "094834b0-44c3-467b-9729-f7a31b2c59ca")
 		(property "Reference" "J3"
@@ -18270,7 +18270,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "52315fbb-8193-414b-9e58-74130eccd033")
 		(property "Reference" "J2"
@@ -19687,7 +19687,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "826badf1-dfef-42d8-92b1-173f95bd6764")
 		(property "Reference" "J6"
@@ -20301,7 +20301,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "98247c65-8e5c-4cdd-9cf5-ee1153042cbb")
 		(property "Reference" "U5"
 			(at 200.66 40.64 0)
@@ -21317,7 +21317,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "d0b83fe3-bd04-4c98-8353-30440fe45e59")
 		(property "Reference" "J7"
 			(at 338.582 210.3882 0)
@@ -22205,7 +22205,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "ec38fd68-9ca7-4bdc-8073-bf4d26a560d1")
 		(property "Reference" "J5"
