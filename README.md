@@ -1,5 +1,11 @@
 # TRS-IO
 
+WORK IN PROGRESS
+
+DO NOT USE YET!
+
+
+
 TRS-IO gives a TRS-80 Model 1/III online capabilities and provides
 access to a variety of services. TRS-IO currently features the
 following capabilities:

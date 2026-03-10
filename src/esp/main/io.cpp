@@ -278,8 +278,11 @@ static void IRAM_ATTR io_task(void* p)
     while (!esp_req_triggered) ;
     esp_req_triggered = false;
 #ifndef CONFIG_TRS_IO_PP
-    // Read pins [S2..S0,A3..A0]
-    const uint8_t s = GPIO.in >> 12;
+    // Read pins [S2..S0,A3..A0]  -------------------------------- Currently at line 281
+    uint8_t temp = (GPIO.in >> 12) & 0xCF;  //------------------------------------------------These lines changed
+    if (gpio_get_level(GPIO_NUM_35) == 1) temp |= 0x10; //----------------------------------/
+    if (gpio_get_level(GPIO_NUM_36) == 1) temp |= 0x20; //---------------------------------/
+    const uint8_t s = temp; //--------------------------------------------------------------------/
     const uint8_t mask = 0x70;
 #else
     // Read pins [S3..S0] to upper nibble
@@ -455,16 +458,16 @@ void init_io()
   gpio_config_t gpioConfig;
 
 #if defined(CONFIG_TRS_IO_MODEL_1)
-// GPIO pins 12-18 (7 pins) are used for S0-S2 and A0-A4
+// GPIO pins 12-18 (7 pins) are used for S0-S2 and A0-A4 ------------- Currently at line 458
   gpioConfig.pin_bit_mask = GPIO_SEL_12 | GPIO_SEL_13 | GPIO_SEL_14 |
-    GPIO_SEL_15 | GPIO_SEL_16 |
-    GPIO_SEL_17 | GPIO_SEL_18;
+    GPIO_SEL_15 | GPIO_SEL_35 |      //----------------------------------------------------- These lines changed
+    GPIO_SEL_36 | GPIO_SEL_18;       // -------------------------------------------------------/
 #elif defined(CONFIG_TRS_IO_PP)
   // GPIO pins 12-15 (4 pins) are used for S0-S3
   gpioConfig.pin_bit_mask = GPIO_SEL_12 | GPIO_SEL_13 | GPIO_SEL_14 | GPIO_SEL_15;
 #else
   // GPIO pins 16-18 (3 pins) are used for S0-S2
-  gpioConfig.pin_bit_mask = GPIO_SEL_16 | GPIO_SEL_17 | GPIO_SEL_18;
+  gpioConfig.pin_bit_mask = GPIO_SEL_35 | GPIO_SEL_36 | GPIO_SEL_18; // -------------------------------------------------------/
 #endif
   gpioConfig.mode = GPIO_MODE_INPUT;
   gpioConfig.pull_up_en = GPIO_PULLUP_DISABLE;
